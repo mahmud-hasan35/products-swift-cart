@@ -30,7 +30,7 @@
     <!-- Desktop Menu -->
     <div class="navbar-center hidden lg:flex gap-6">
       <a   class="cursor-pointer hover:text-blue-600">Home</a>
-      <a href="/product.html" class="cursor-pointer hover:text-blue-600">Products</a>
+      <a href="./product.html" class="cursor-pointer hover:text-blue-600">Products</a>
       <a class="cursor-pointer hover:text-blue-600">About</a>
       <a class="cursor-pointer hover:text-blue-600">Contact</a>
     </div>
@@ -49,7 +49,7 @@
 
         <div tabindex="0"
           class="dropdown-content bg-base-100 rounded-box z-10 mt-3 w-40 p-3 shadow right-0 flex flex-col gap-2">
-          <a id="homeBtn" class="hover:text-blue-600">Home</a>
+          <a  class="hover:text-blue-600">Home</a>
           <a href="./product.html" class="hover:text-blue-600">Products</a>
           <a class="hover:text-blue-600">About</a>
           <a class="hover:text-blue-600">Contact</a>
@@ -66,7 +66,7 @@
 <section class="px-4 lg:px-12 py-4">
   <div class="relative">
     <img 
-      src="../asset/banner-image.png"
+      src="./asset/banner-image.png"
       alt="Banner"
       class="w-full h-[70vh] object-cover rounded-lg">
    <div class="absolute bg-black/50 inset-0 bg-gradient-to-r from-black/70 to-transparent rounded-lg"></div>
@@ -201,130 +201,34 @@
 <section class="px-6 lg:px-16 py-12 bg-base-200">
 
   <!-- Grid Container -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> -->
 
     <!-- Product Card 1 -->
-    <div id="product_card" class="bg-white rounded-xl shadow-lg overflow-hidden">
+  <div 
+        id="product_cart" 
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+</div>
 
-      <div class="bg-gray-200 flex justify-center items-center h-52">
-        <img src="../asset/pexels-anna-nekrashevich-8532616.jpg" class="h-40 object-contain" alt="">
-      </div>
-
-      <div class="p-5">
-
-        <div class="flex justify-between items-center mb-3">
-          <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">
-            New
-          </span>
-
-          <div class="flex items-center gap-1 text-yellow-500 text-sm">
-            <i class="fa-solid fa-star"></i>
-            <span class="text-gray-700">4.8</span>
-          </div>
-        </div>
-
-        <p class="text-gray-500 text-sm mb-3">
-          High quality product with modern design.
-        </p>
-
-        <h4 class="text-xl font-bold mb-4">$120</h4>
-
-        <div class="flex justify-between items-center text-sm">
-          <button class="flex items-center gap-2 text-primary font-medium">
-            <i class="fa-solid fa-circle-info"></i>
-            Details
-          </button>
-
-          <button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg">
-            <i class="fa-solid fa-cart-plus"></i>
-            Add
-          </button>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- Product Card 2 -->
-    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-      <!-- same structure -->
-      <div class="bg-gray-200 flex justify-center items-center h-52">
-        <img src="../asset/pexels-bilakis-4288773.jpg" class="h-40 object-contain" alt="">
-      </div>
-
-      <div class="p-5">
-        <div class="flex justify-between items-center mb-3">
-          <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">
-            Sale
-          </span>
-          <div class="flex items-center gap-1 text-yellow-500 text-sm">
-            <i class="fa-solid fa-star"></i>
-            <span class="text-gray-700">4.6</span>
-          </div>
-        </div>
-
-        <p class="text-gray-500 text-sm mb-3">
-          Stylish and comfortable premium product.
-        </p>
-
-        <h4 class="text-xl font-bold mb-4">$95</h4>
-
-        <div class="flex justify-between items-center text-sm">
-          <button  class="flex items-center  gap-2 text-primary font-medium">
-            <i class="fa-solid fa-circle-info"></i>
-            Details
-          </button>
-
-          <button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg">
-            <i class="fa-solid fa-cart-plus"></i>
-            Add
-          </button>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Product Card 3 -->
-    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-      <!-- same structure -->
-      <div class="bg-gray-200 flex justify-center items-center h-52">
-        <img src="../asset/pexels-dayong-tien-681073045-26297709.jpg" class="h-40 object-contain" alt="">
-      </div>
-
-      <div class="p-5">
-        <div class="flex justify-between items-center mb-3">
-          <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">
-            Hot
-          </span>
-          <div class="flex items-center gap-1 text-yellow-500 text-sm">
-            <i class="fa-solid fa-star"></i>
-            <span class="text-gray-700">4.9</span>
-          </div>
-        </div>
-
-        <p class="text-gray-500 text-sm mb-3">
-          Premium quality product for everyday use.
-        </p>
-
-        <h4 class="text-xl font-bold mb-4">$150</h4>
-
-        <div class="flex justify-between items-center text-sm">
-          <button class="flex items-center gap-2 text-primary font-medium">
-            <i class="fa-solid fa-circle-info"></i>
-            Details
-          </button>
-
-          <button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg">
-            <i class="fa-solid fa-cart-plus"></i>
-            Add
-          </button>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
 </section>
+
+<div id="product_modal" 
+     class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden justify-center items-center z-50 transition-all duration-300"
+>
+
+  <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 rounded-xl p-6 relative">
+
+    <button onclick="closeModal()" 
+            class="absolute top-3 right-3 text-xl text-gray-500 cursor-pointer" >
+      <i class="fa-regular fa-circle-xmark"></i>
+    </button>
+
+    <div id="modal_content"></div>
+
+  </div>
+</div>
+
+
 
 <!-- footer section -->
 
@@ -416,9 +320,9 @@
 </footer>
 
 
+<script src="./java-scipt/script.js"></script>
 
 
-  <script src="java-scipt/script.js"></script>
 </body>
 
 </html>
