@@ -1,3 +1,23 @@
+// menu active class add and remove //
+
+const navLinks = document.querySelectorAll(".nav-link");
+
+// current page বের করছি
+const currentPage = window.location.pathname.split("/").pop();
+
+navLinks.forEach(link => {
+
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage) {
+    link.classList.add("text-blue-600", "font-semibold");
+  }
+
+});
+
+
+
+
 // Load All Products
 
 const loadProducts = async () => {
